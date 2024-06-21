@@ -260,7 +260,7 @@ def main():
         verify_certs=False,
         ssl_show_warn=False
     )
-    all_software = read_calc('./dgfip.csv')
+    all_software = read_calc('./data.csv')
     all_data = fill_data(client)
     list_cve = research_all_cve(all_data, all_software)
     fill_latex(list_cve)
